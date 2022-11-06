@@ -7,7 +7,6 @@ We borrow the embedding suitability map from steganography to modulate the adver
 Run Attack_IFGSM_u (or Attack_TDI_u) to compare AEs with/without the proposed scheme.
 
 ![image](https://github.com/zengh5/Undetectable-attack/blob/main/advimgs_un/ifgsm_UNIWARD/0c7ac4a8c9dfa802.png)
-
 ![image](https://github.com/zengh5/Undetectable-attack/blob/main/advimgs_un/ifgsm/0c7ac4a8c9dfa802.png)
 
 ## Extention
