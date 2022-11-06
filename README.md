@@ -6,6 +6,9 @@ We borrow the embedding suitability map from steganography to modulate the adver
 ## Usage 
 Run Attack_IFGSM_u (or Attack_TDI_u) to compare AEs with/without the proposed scheme.
 
+![image](https://github.com/zengh5/Undetectable-attack/blob/main/advimgs_un/ifgsm_UNIWARD/0c7ac4a8c9dfa802.png)
+
+![image](https://github.com/zengh5/Undetectable-attack/blob/main/advimgs_un/ifgsm/0c7ac4a8c9dfa802.png)
 
 ## Extention
 Here we use S-UNIWARD [1] to generate the embedding suitability maps. You are welcomed to try other steganography methods. This could be done easily by changing the dir to the alternative suitability maps:
