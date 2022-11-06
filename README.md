@@ -1,2 +1,16 @@
-# Undetectable-attack
-Making adversarial examples difficult to detect with the help of steganography
+The code is for our paper "Towards undetectable adversarial examples: a steganographic perspective"
+
+## Function
+We borrow the embedding suitability map from steganography to modulate the adversarial perturbation. The obtained AEs are hard to detect against statistical detectors.
+
+## Usage 
+Run Attack_IFGSM_u (or Attack_TDI_u) to compare AEs with/without the proposed scheme.
+
+
+## Extention
+Here we use S-UNIWARD [1] to generate the embedding suitability maps. You are welcomed to try other steganography methods. This could be done easily by changing the dir to the alternative suitability maps:
+                                               mat_path = './SuitabilityMap/S_UNIWARD/'
+
+Here we use IFGSM, TDI-FGSM as baselines. You are welcomed to extend it to other advanced attacks: C&W, NI, PID, ...
+
+[1] Holub, V., Fridrich, J. & Denemark, T. Universal distortion function for steganography in an arbitrary domain. EURASIP J. on Info. Security 2014
