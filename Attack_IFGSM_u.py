@@ -131,7 +131,7 @@ for k in range(0, num_batches):
             X_adv_norm = norm(X_adv).detach()
             output2 = model_2(X_adv_norm)
             predict = torch.argmax(output2, dim=1)
-            pos[1, t // 50] = pos[1, t // 50] + sum(predict != labels).cpu().numpy()
+            pos[1, t // 50] = pos[1, t // 50] + sum(predict != labels_ori).cpu().numpy()
 
             X_adv_cpu = X_adv.detach().cpu()
             for img_i in range(batch_size_cur):
@@ -177,7 +177,7 @@ for k in range(0, num_batches):
             X_adv_norm = norm(X_adv).detach()
             output2 = model_2(X_adv_norm)
             predict = torch.argmax(output2, dim=1)
-            pos[2, t // 50] = pos[2, t // 50] + sum(predict != labels).cpu().numpy()
+            pos[2, t // 50] = pos[2, t // 50] + sum(predict != labels_ori).cpu().numpy()
 
             X_adv_cpu = X_adv.detach().cpu()
             for img_i in range(batch_size_cur):
@@ -242,7 +242,7 @@ for k in range(0, num_batches):
             X_adv_norm = norm(X_adv).detach()
             output2 = model_2(X_adv_norm)
             predict = torch.argmax(output2, dim=1)
-            pos[3, t // 50] = pos[3, t // 50] + sum(predict != labels).cpu().numpy()
+            pos[3, t // 50] = pos[3, t // 50] + sum(predict != labels_ori).cpu().numpy()
 
             X_adv_cpu = X_adv.detach().cpu()
             for img_i in range(batch_size_cur):
