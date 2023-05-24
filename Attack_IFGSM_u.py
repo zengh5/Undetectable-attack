@@ -46,7 +46,7 @@ mat_path = './SuitabilityMap/S_UNIWARD/'      # Embedding suitability map
 # only one sample is used in this demo
 num_batches = int(np.ceil((len(image_id_list) - 999) / batch_size))
 img_size = 299
-epsilon = 16  # L_inf norm bound
+epsilon = 16            # L_inf norm bound
 lr = (epsilon/8) / 255  # step size
 # White-box attack success numbers:
 # row 0: IFGSM, row 1: Weighted IFGSM, row 2: Attentional IFGSM, row 3: WA IFGSM
@@ -84,7 +84,7 @@ for k in range(0, num_batches):
             predict = torch.argmax(output2, dim=1)
             pos[0, t // 50] = pos[0, t // 50] + sum(predict != labels_ori).cpu().numpy()
 
-            X_adv_cpu = X_adv.detach().cpu()
+            X_adv_cpu = X_adv.detach().cpu() 
             for img_i in range(batch_size_cur):
                 # Channel*M*N -> M*N*Channel
                 X_adv_img = X_adv_cpu[img_i].permute(1, 2, 0)
