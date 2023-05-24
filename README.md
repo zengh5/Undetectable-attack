@@ -1,4 +1,4 @@
-The code is reproducing for our paper "Towards undetectable adversarial examples: a steganographic perspective"
+The code is for reproducing our paper "Towards undetectable adversarial examples: a steganographic perspective"
 
 ## Function
 We borrow the embedding suitability map from steganography to modulate the adversarial perturbation. The obtained AEs are hard to detect against statistical detectors.
