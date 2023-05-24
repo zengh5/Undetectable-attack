@@ -53,14 +53,14 @@ mat_path = './SuitabilityMap/S_UNIWARD/'       # Embedding suitability map
 # only one sample is used in this demo
 num_batches = int(np.ceil((len(image_id_list) - 999) / batch_size))
 img_size = 299
-epsilon = 16  # L_inf norm bound
+epsilon = 16            # L_inf norm bound
 lr = (epsilon/8) / 255  # step size
 # White-box attack success numbers:
 # row 0: TDI, row 1: Weighted TDI, row 2: Attentional TDI, row 3: WA TDI
 pos = np.zeros((4, max_iterations // 50))
 
 # 4 Crafting AE #
-# 4.1 IFGSM with CE loss
+# 4.1 TDI with CE loss
 for k in range(0, num_batches):
     print(k)
     batch_size_cur = min(batch_size, len(image_id_list) - k * batch_size)
