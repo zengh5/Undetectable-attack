@@ -43,7 +43,7 @@ def gkern(kernlen=15, nsig=3):
     return kernel
 
 
-# define DI
+# define DI, we return the random paremeters for further use
 def DI(X_in):
     rnd = np.random.randint(299, 330, size=1)[0]
     h_rem = 330 - rnd
