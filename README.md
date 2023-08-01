@@ -1,4 +1,5 @@
-The code is for reproducing our paper "Towards undetectable adversarial examples: a steganographic perspective"
+Official code for reproducing our paper   
+H. Zeng, B. Chen, R. Yang, C. Li, A. Peng, "Towards undetectable adversarial examples: a steganographic perspective", to appear in the 2023 International Conference on Neural Information Processing (ICONIP2023).
 
 ## Function
 We borrow the embedding suitability map from steganography to modulate the adversarial perturbation. The obtained AEs are hard to detect against statistical detectors.
